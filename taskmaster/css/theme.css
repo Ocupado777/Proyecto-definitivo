@@ -1,0 +1,68 @@
+/* ================================
+   🎨 MODO OSCURO PREMIUM
+   ================================ */
+:root {
+    --text-primary: #F5F5F7;
+    --text-secondary: #9A9AA3;
+
+    --background-dark: #0A0A0C;
+
+    --card-bg: rgba(10, 10, 12, 0.85);
+    --card-border: rgba(255, 255, 255, 0.05);
+
+    --input-bg: rgba(255, 255, 255, 0.04);
+    --input-border: rgba(4, 4, 4, 0.12);
+
+    --accent: #D4AF37;
+    --accent-strong: #B88A2E;
+
+    --shadow-soft: 0 4px 14px rgba(0, 0, 0, 0.35);
+    --shadow-strong: 0 8px 28px rgba(0, 0, 0, 0.45);
+}
+
+body {
+    background: var(--background-dark);
+    color: var(--text-primary);
+}
+
+/* ================================
+   ☀️ MODO CLARO PREMIUM
+   ================================ */
+[data-theme="light"] {
+    --text-primary: #1A1A1C;
+    --text-secondary: #555555;
+
+    --background-dark: #F5F5F5;
+
+    --card-bg: rgba(255, 255, 255, 0.85);
+    --card-border: rgba(0, 0, 0, 0.08);
+
+    --input-bg: rgba(0, 0, 0, 0.05);
+    --input-border: rgba(0, 0, 0, 0.15);
+
+    --accent: #B8860B;
+    --accent-strong: #8C6A07;
+
+    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.12);
+    --shadow-strong: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+[data-theme="light"] {
+    --text-primary: #2A2A2E;
+    --text-secondary: #6E6E73;
+
+    --background-dark: #F2F2F7; /* Fondo Apple-style */
+
+    --card-bg: rgba(255, 255, 255, 0.75);
+    --card-border: rgba(0, 0, 0, 0.06);
+
+    --input-bg: rgba(255, 255, 255, 0.6);
+    --input-border: rgba(0, 0, 0, 0.12);
+
+    --accent: #C89A1B; /* Dorado más elegante */
+    --accent-strong: #A67F17;
+
+    --shadow-soft: 0 4px 14px rgba(0, 0, 0, 0.10);
+    --shadow-strong: 0 8px 28px rgba(0, 0, 0, 0.15);
+}
+

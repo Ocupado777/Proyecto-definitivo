@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster - Inicio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+            <img src="assets/images/logo-t.png" class="sidebar-logo" alt="TaskMaster Logo">
+            <h3>TaskMaster</h3>
+        </div>
+
+        <nav class="sidebar-menu">
+            <a href="index.html" class="menu-item active">
+                🏠 <span>Inicio</span>
+            </a>
+
+            <a href="tareas.html" class="menu-item">
+                ✅ <span>Tareas</span>
+            </a>
+
+            <a href="proyectos.html" class="menu-item">
+                📁 <span>Proyectos</span>
+            </a>
+
+            <a href="calendario.html" class="menu-item">
+                📅 <span>Calendario</span>
+            </a>
+
+            <a href="notifications/notifications.html" class="menu-item">
+                🔔 <span>Notificaciones</span>
+            </a>
+
+            <a href="perfil.html" class="menu-item">
+                👤 <span>Perfil</span>
+            </a>
+        </nav>
+
+        <button class="btn-new-task">
+            + Nueva tarea
+        </button>
+
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <div class="search-box">
+                <input type="text" placeholder="Buscar tareas...">
+            </div>
+
+            <div class="topbar-actions">
+
+                <!-- Botón de tema -->
+                <button id="themeToggle" class="theme-btn-topbar">🌙</button>
+
+                <!-- Avatar + nombre -->
+                <div class="user-info">
+                    <div class="avatar" id="userAvatar">A</div>
+                    <span id="userName">Usuario</span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- DASHBOARD SIMPLE -->
+        <section class="page-content">
+
+            <h2 class="mb-4">Resumen de tu día</h2>
+
+            <div class="row g-3">
+
+                <div class="col-md-4">
+                    <div class="card bg-transparent border rounded-4 p-3">
+                        <h5>Tareas pendientes</h5>
+                        <p class="text-secondary mb-1">Hoy</p>
+                        <h3>5</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card bg-transparent border rounded-4 p-3">
+                        <h5>Proyectos activos</h5>
+                        <p class="text-secondary mb-1">Esta semana</p>
+                        <h3>3</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card bg-transparent border rounded-4 p-3">
+                        <h5>Notificaciones</h5>
+                        <p class="text-secondary mb-1">Sin leer</p>
+                        <h3>2</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!-- JS -->
+<script src="js/ui/theme-toggle.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* Fondo */
+.login-body {
+    background: url('../assets/images/fondo-t.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(4px);
+}
+
+/* Tarjeta */
+.login-card {
+    width: 380px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 25px;
+}
+
+/* Forzar colores dentro de la tarjeta */
+.login-card,
+.login-card * {
+    color: var(--text-primary) !important;
+}
+
+/* Logo */
+.logo-img {
+    width: 80px;
+    filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.5));
+}
+
+/* Inputs */
+.input-premium {
+    background: var(--input-bg) !important;
+    border: 1px solid var(--input-border) !important;
+    color: var(--text-primary) !important;
+    border-radius: 8px;
+}
+
+.input-premium:focus {
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 8px var(--accent);
+}
+
+/* Fix definitivo */
+.input-premium,
+.input-premium:focus,
+.input-premium:active {
+    background-color: var(--input-bg) !important;
+    color: var(--text-primary) !important;
+}
+
+.input-premium::placeholder {
+    color: var(--text-secondary) !important;
+}
+
+.input-premium:-webkit-autofill {
+    -webkit-text-fill-color: var(--text-primary) !important;
+    box-shadow: 0 0 0px 1000px var(--input-bg) inset !important;
+}
+
+/* Botón premium */
+.btn-premium {
+    background: linear-gradient(135deg, #8A2BE2, #FF4DD2);
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-premium:hover {
+    opacity: 0.9;
+}
+
+/* Enlaces */
+.link-premium {
+    color: var(--accent) !important;
+    font-weight: 600;
+}
+
+.link-premium:hover {
+    color: var(--accent-strong) !important;
+}
+
+/* Mensajes */
+.message-area {
+    font-weight: 600;
+    color: var(--accent) !important;
+}
+
+.message-error,
+.login-card .message-error {
+    font-weight: 600;
+    color: #FF4D4D !important;
+}
+
+/* Botón de tema */
+.theme-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--text-primary);
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    background: var(--accent);
+    color: white;
+}

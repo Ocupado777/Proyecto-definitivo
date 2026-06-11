@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster - Tareas</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos -->
+     <link rel="stylesheet" href="css/theme.css">
+     <link rel="stylesheet" href="css/styles.css">    
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+            <img src="../assets/images/logo-t.png" class="sidebar-logo" alt="TaskMaster Logo">
+            <h3>TaskMaster</h3>
+        </div>
+
+        <nav class="sidebar-menu">
+            <a href="index.html" class="menu-item">
+                🏠 <span>Inicio</span>
+            </a>
+
+            <a href="tareas.html" class="menu-item active">
+                ✅ <span>Tareas</span>
+            </a>
+
+            <a href="proyectos.html" class="menu-item">
+                📁 <span>Proyectos</span>
+            </a>
+
+            <a href="calendario.html" class="menu-item">
+                📅 <span>Calendario</span>
+            </a>
+
+            <a href="../notifications/notifications.html" class="menu-item">
+                🔔 <span>Notificaciones</span>
+            </a>
+
+            <a href="perfil.html" class="menu-item">
+                👤 <span>Perfil</span>
+            </a>
+        </nav>
+
+        <button class="btn-new-task" id="openNewTask">
+            + Nueva tarea
+        </button>
+
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <div class="search-box">
+                <input type="text" placeholder="Buscar tareas..." id="searchTask">
+            </div>
+
+            <div class="topbar-actions">
+                <button id="themeToggle" class="theme-btn-topbar">🌙</button>
+
+                <div class="user-info">
+                    <div class="avatar" id="userAvatar">A</div>
+                    <span id="userName">Usuario</span>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- CONTENIDO DE TAREAS -->
+        <section class="page-content">
+
+            <div class="tasks-header">
+                <h2>Tus tareas</h2>
+                <button class="btn-new-task-floating" id="openNewTask2">+ Nueva tarea</button>
+            </div>
+
+            <div id="taskList" class="row g-3">
+                <!-- Aquí se cargarán las tareas dinámicamente -->
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!-- ================================
+     MODAL PREMIUM — NUEVA TAREA
+     ================================ -->
+<div class="modal-premium" id="taskModal">
+    <div class="modal-content-premium">
+
+        <h3>Nueva tarea</h3>
+
+        <label>Título</label>
+        <input type="text" id="taskTitle" class="input-premium" placeholder="Ej: Diseñar dashboard">
+
+        <label>Descripción</label>
+        <textarea id="taskDescription" class="input-premium" rows="3" placeholder="Detalles de la tarea"></textarea>
+
+        <label>Fecha</label>
+        <input type="date" id="taskDate" class="input-premium">
+
+        <label>Prioridad</label>
+        <select id="taskPriority" class="input-premium">
+            <option value="low">Baja</option>
+            <option value="medium">Media</option>
+            <option value="high">Alta</option>
+        </select>
+
+        <label>Etiquetas (separadas por coma)</label>
+        <input type="text" id="taskTags" class="input-premium" placeholder="Ej: UI, Frontend">
+
+        <div class="modal-actions">
+            <button id="cancelTask" class="btn-cancel">Cancelar</button>
+            <button id="saveTask" class="btn-save">Guardar</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- JS -->
+ <script src="js/ui/theme-toggle.js"></script>
+ <script src="js/app.js"></script>
+ <script type="module" src="js/tasks/tasks-ui.js"></script>
+</body>
+</html>
